@@ -1,82 +1,82 @@
 [
   {
-    "thing": "der",
-    "type": "Masculine Nominativ",
+    "article": "der",
+    "case": "Maskulin Nominativ",
     "id": "der",
     "cat": "def-article"
   }, {
-    "thing": "den",
-    "type": "Masc. Akk.",
+    "article": "den",
+    "case": "Maskulin Akkusativ",
     "id": "den",
     "cat": "def-article"
   }, {
-    "thing": "dem",
-    "type": "Masc. Dat.",
+    "article": "dem",
+    "case": "Maskulin Dativ",
     "id": "dem",
     "cat": "def-article"
   }, {
-    "thing": "des",
-    "type": "Masc. Gen.",
+    "article": "des",
+    "case": "Maskulin Genetiv",
     "id": "des",
     "cat": "def-article"
   }, {
-    "thing": "die",
-    "type": "Fem. Nom.",
+    "article": "die",
+    "case": "Feminin Nominativ",
     "id": "die",
     "cat": "def-article"
   }, {
-    "thing": "die",
-    "type": "Fem. Akk.",
+    "article": "die",
+    "case": "Feminin Akkusativ",
     "id": "die",
     "cat": "def-article"
   }, {
-    "thing": "der",
-    "type": "Fem. Dat.",
+    "article": "der",
+    "case": "Feminin Dativ",
     "id": "der",
     "cat": "def-article"
   }, {
-    "thing": "der",
-    "type": "Fem. Gen.",
+    "article": "der",
+    "case": "Feminin Genetiv",
     "id": "der",
     "cat": "def-article"
   }, {
-    "thing": "das",
-    "type": "Neut. Nom.",
+    "article": "das",
+    "case": "Neurtum Nominativ",
     "id": "das",
     "cat": "def-article"
   }, {
-    "thing": "das",
-    "type": "Neut. Akk.",
+    "article": "das",
+    "case": "Neurtum Akkusativ",
     "id": "das",
     "cat": "def-article"
   }, {
-    "thing": "dem",
-    "type": "Neut. Dat.",
+    "article": "dem",
+    "case": "Neurtum Dativ",
     "id": "dem",
     "cat": "def-article"
   }, {
-    "thing": "des",
-    "type": "Neut. Gen.",
+    "article": "des",
+    "case": "Neurtum Genetiv",
     "id": "des",
     "cat": "def-article"
   }, {
-    "thing": "die",
-    "type": "Plural Nom.",
+    "article": "die",
+    "case": "Plural Nominativ",
     "id": "die",
     "cat": "def-article"
   }, {
-    "thing": "die",
-    "type": "Plural Akk.",
+    "article": "die",
+    "case": "Plural Akkusativ",
     "id": "die",
     "cat": "def-article"
   }, {
-    "thing": "den",
-    "type": "Plural Dat.",
+    "article": "den",
+    "case": "Plural Dativ",
     "id": "den",
     "cat": "def-article"
   }, {
-    "thing": "der",
-    "type": "Plural Gen.",
+    "article": "der",
+    "case": "Plural Genetiv",
     "id": "der",
     "cat": "def-article"
   }
