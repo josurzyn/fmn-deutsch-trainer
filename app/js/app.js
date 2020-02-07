@@ -150,7 +150,7 @@ let modalTime = document.getElementById('modal-time');
 // Close modal
 closeModal = () => {
   modal.style.display = 'none';
-  adminModal.style.display = 'none';
+  //adminModal.style.display = 'none';
   reset();
 }
 
