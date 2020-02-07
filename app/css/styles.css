@@ -1,7 +1,21 @@
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #43464B;
   /*background: #fff url('/img/triangle-mosaic.png'); /* Background from Subtle Patterns */
+}
+.flex-wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 p {
   margin: 3px;
@@ -9,6 +23,7 @@ p {
   font-size: 0.9em;
 }
 #controls {
+  flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -33,7 +48,7 @@ p {
 }
 #deckSpace {
   min-height: 100px;
-  width: 460px;
+  /*width: 460px;*/
   /*margin: 5px;
   padding: 18px;
   border-radius: 10px;*/
@@ -149,5 +164,21 @@ button {
     font-size: 0.7em;
     max-width: 45px;
     height: 45px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #controls {
+    width: 460px;
+    flex-basis: auto;
+  }
+  #deckSpace {
+    width: 460px;
+  }
+}
+
+@media screen and (min-height: 630px) {
+  #deckSpace {
+    margin-bottom: 80px;
   }
 }
