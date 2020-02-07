@@ -35,17 +35,17 @@ createDeck = (cards) => {
   deckSpace.innerHTML = "";
   for (let i = 0; i < 8; i++) {
     // Create DE card
-    let cardThing = document.createElement('li');
-    cardThing.innerText = cards[i].thing;
-    cardThing.classList.add(cards[i].id, 'card');
+    let cardArticle = document.createElement('li');
+    cardArticle.innerText = cards[i].article;
+    cardArticle.classList.add(cards[i].id, 'article', 'card');
     // Create EN card
-    let cardType = document.createElement('li');
-    cardType = document.createElement('li');
-    cardType.innerText = cards[i].type;
-    cardType.classList.add(cards[i].id, 'card');
+    let cardCase = document.createElement('li');
+    cardCase = document.createElement('li');
+    cardCase.innerText = cards[i].case;
+    cardCase.classList.add(cards[i].id, 'case', 'card');
     // Add both cards to fragment
-    deckFragment.appendChild(cardThing);
-    deckFragment.appendChild(cardType);
+    deckFragment.appendChild(cardArticle);
+    deckFragment.appendChild(cardCase);
   }
   // Add deck fragment to DOM
   deckSpace.appendChild(deckFragment);
@@ -109,7 +109,11 @@ addFlipEvent = () => {
 //  Check for match
 checkMatch = () => {
   if (openCards[0].classList[0] == openCards[1].classList[0]){
-    setTimeout(match, 250);
+    if(openCards[0].classList[1] != openCards[1].classList[1]){
+      setTimeout(match, 250);
+    } else {
+      setTimeout(noMatch, 1000);
+    }
   } else {
     setTimeout(noMatch, 1000);
   }
@@ -203,7 +207,6 @@ timer = () => {
     }
   }
   displayTimer.innerHTML = (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
-
 }
 
 resetTimer = () => {
@@ -229,7 +232,7 @@ reset = () => {
 // Show admin modal
 let adminModal = document.getElementById('admin');
 
-showAdmin = () => {
+const showAdmin = () => {
   adminModal.style.display = 'block';
 }
 
@@ -296,5 +299,5 @@ addCardForm.addEventListener('submit', function(e) {
 
 /* Get cards on document load*/
 document.addEventListener('DOMContentLoaded', function(){
-  getCards();
+  fetchWordBank();
 });
