@@ -1,0 +1,83 @@
+[
+  {
+    "thing": "der",
+    "type": "Masculine Nominativ",
+    "id": "der",
+    "cat": "def-article"
+  }, {
+    "thing": "den",
+    "type": "Masc. Akk.",
+    "id": "den",
+    "cat": "def-article"
+  }, {
+    "thing": "dem",
+    "type": "Masc. Dat.",
+    "id": "dem",
+    "cat": "def-article"
+  }, {
+    "thing": "des",
+    "type": "Masc. Gen.",
+    "id": "des",
+    "cat": "def-article"
+  }, {
+    "thing": "die",
+    "type": "Fem. Nom.",
+    "id": "die",
+    "cat": "def-article"
+  }, {
+    "thing": "die",
+    "type": "Fem. Akk.",
+    "id": "die",
+    "cat": "def-article"
+  }, {
+    "thing": "der",
+    "type": "Fem. Dat.",
+    "id": "der",
+    "cat": "def-article"
+  }, {
+    "thing": "der",
+    "type": "Fem. Gen.",
+    "id": "der",
+    "cat": "def-article"
+  }, {
+    "thing": "das",
+    "type": "Neut. Nom.",
+    "id": "das",
+    "cat": "def-article"
+  }, {
+    "thing": "das",
+    "type": "Neut. Akk.",
+    "id": "das",
+    "cat": "def-article"
+  }, {
+    "thing": "dem",
+    "type": "Neut. Dat.",
+    "id": "dem",
+    "cat": "def-article"
+  }, {
+    "thing": "des",
+    "type": "Neut. Gen.",
+    "id": "des",
+    "cat": "def-article"
+  }, {
+    "thing": "die",
+    "type": "Plural Nom.",
+    "id": "die",
+    "cat": "def-article"
+  }, {
+    "thing": "die",
+    "type": "Plural Akk.",
+    "id": "die",
+    "cat": "def-article"
+  }, {
+    "thing": "den",
+    "type": "Plural Dat.",
+    "id": "den",
+    "cat": "def-article"
+  }, {
+    "thing": "der",
+    "type": "Plural Gen.",
+    "id": "der",
+    "cat": "def-article"
+  }
+]

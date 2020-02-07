@@ -1,0 +1,133 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #43464B;
+  background: #fff url('/img/triangle-mosaic.png'); /* Background from Subtle Patterns */
+}
+p {
+  margin: 3px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.title {
+  flex-basis: 100%;
+  text-align: center;
+}
+.control {
+  flex-basis: 10%;
+  text-align: center;
+}
+/* Styling for deck */
+#game {
+  display: flex;
+  justify-content: center;
+}
+#deckSpace {
+  min-height: 100px;
+  width: 460px;
+  margin: 5px;
+  padding: 18px;
+  border-radius: 10px;
+  background: rgb(225,204,9);
+  background: linear-gradient(173deg, rgba(225,204,9,0.9) 0%, rgba(245,217,33,0.15) 55%, rgba(11,145,191,0.9) 100%);
+  -webkit-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);
+  -moz-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);
+  box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);
+}
+ul, li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  font-weight: 300;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  background: #43464B;
+  box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.4);
+  flex-basis: 25%;
+  margin: 5px;
+  cursor: pointer;
+}
+.card.open {
+  transform: rotateY(0);
+  background: #fafafa;
+}
+.card.match {
+  color: #fafafa;
+  background: #6bb8d2a3;
+}
+
+/* Win modal */
+#win {
+  display: none;
+}
+.modal-background {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-msg {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100px;
+  text-align: center;
+  margin: 10% 10% auto;
+  border: 1px solid #43464B;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.4);
+}
+.close {
+  cursor: pointer;
+  margin: 20px 10px 8px;
+}
+#new-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* Add card modal*/
+#admin {
+  display: none;
+}
+.add-card-form {
+  flex-basis: 35%;
+  margin: 5px;
+}
+.add-card-form.label {
+  text-align: right;
+}
+.add-card-form.submit {
+  font: inherit;
+  background-color: #43464B;
+  border: 1px solid #43464B;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  margin: 20px 10px;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 800;
+  color: inherit;
+}
