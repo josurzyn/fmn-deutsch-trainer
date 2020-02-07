@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #43464B;
-  background: #fff url('/img/triangle-mosaic.png'); /* Background from Subtle Patterns */
+  /*background: #fff url('/img/triangle-mosaic.png'); /* Background from Subtle Patterns */
 }
 p {
   margin: 3px;
@@ -12,16 +12,20 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .title {
   flex-basis: 100%;
-  text-align: center;
+  margin: 10px;
+  text-align: right;
 }
 .control {
-  flex-basis: 10%;
+  font-size: 0.8em;
+  flex-basis: 14%;
+  align-self: right;
   text-align: center;
 }
+
 /* Styling for deck */
 #game {
   display: flex;
@@ -30,14 +34,14 @@ p {
 #deckSpace {
   min-height: 100px;
   width: 460px;
-  margin: 5px;
+  /*margin: 5px;
   padding: 18px;
-  border-radius: 10px;
-  background: rgb(225,204,9);
+  border-radius: 10px;*/
+  /*background: rgb(225,204,9);
   background: linear-gradient(173deg, rgba(225,204,9,0.9) 0%, rgba(245,217,33,0.15) 55%, rgba(11,145,191,0.9) 100%);
   -webkit-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);
   -moz-box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);
-  box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);
+  box-shadow: 10px 15px 25px 0px rgba(0,0,0,0.56);*/
 }
 ul, li {
   list-style: none;
@@ -55,7 +59,7 @@ ul, li {
   align-items: center;
   max-width: 80px;
   height: 80px;
-  border-radius: 15px;
+  border-radius: 10px;
   background: #43464B;
   box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.4);
   flex-basis: 25%;
@@ -68,7 +72,7 @@ ul, li {
 }
 .card.match {
   color: #fafafa;
-  background: #6bb8d2a3;
+  background: #118bb4a3;
 }
 
 /* Win modal */
@@ -130,4 +134,20 @@ button {
   font: inherit;
   font-weight: 800;
   color: inherit;
+}
+
+/* Media Queries */
+@media screen and (max-width: 425px) {
+  .card {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card {
+    font-size: 0.7em;
+    max-width: 45px;
+    height: 45px;
+  }
 }
