@@ -182,3 +182,15 @@ button {
     margin-bottom: 80px;
   }
 }
+
+@media screen and (min-width: 910px) {
+  #controls {
+    padding: 0 25%;
+  }
+}
+
+@media screen and (min-width: 1830px) {
+  #controls {
+    padding: 0 35%;
+  }
+}
