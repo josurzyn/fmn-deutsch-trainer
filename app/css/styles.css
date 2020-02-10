@@ -27,19 +27,55 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .title {
   flex-basis: 100%;
   margin: 10px;
   text-align: right;
 }
+.stats {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
 .control {
   font-size: 0.8em;
-  flex-basis: 14%;
-  align-self: right;
+  flex-basis: 20%;
   text-align: center;
 }
+/* hamburger navigation*/
+.burger {
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  margin: 10px 5px 5px 20px;
+}
+.line1, .line2, .line3 {
+  width: 35px;
+  height: 4px;
+  border-radius: 9px;
+  background-color: #43464B;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.close.line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+  background-color: #707070;
+}
+.close.line2 {
+  opacity: 0;
+}
+.close.line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px) ;
+  transform: rotate(45deg) translate(-8px, -6px) ;
+  background-color: #707070;
+}
+
 
 /* Styling for deck */
 #game {
