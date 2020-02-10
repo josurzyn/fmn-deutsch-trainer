@@ -72,10 +72,35 @@ p {
 .close.line3 {
   -webkit-transform: rotate(45deg) translate(-8px, -6px) ;
   transform: rotate(45deg) translate(-8px, -6px) ;
-  background-color: #707070;
+}
+/* Options menu */
+.options {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(-500px, 0);
+  transition: 0.5s ease-in-out;
 }
 
-
+/* Choose number of cards */
+.card-count {
+  z-index: 1;
+  position: fixed;
+  top: 40%;
+  margin-left: 20px;
+}
+.options.show-opts {
+  transform: translate(0,0);
+}
+.btn {
+  text-align: center;
+}
+input {
+  text-align: center;
+  font: inherit;
+}
 /* Styling for deck */
 #game {
   display: flex;

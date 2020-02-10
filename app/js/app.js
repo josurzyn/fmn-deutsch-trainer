@@ -6,6 +6,11 @@ let seconds = 0;
 let minutes = 0;
 let displayTimer = document.getElementById('timer');
 
+// Card count
+let cardCount = document.getElementById('no-of-cards');
+let pairs = cardCount.value / 2;
+console.log('pairs is ' + pairs);
+
 /* Use to fetch deck from json word bank */
 let cards = []
 
@@ -33,7 +38,7 @@ createDeck = (cards) => {
   let deckSpace = document.getElementById("deck");
   // Clear current deck
   deckSpace.innerHTML = "";
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < pairs; i++) {
     // Create DE card
     let cardArticle = document.createElement('li');
     cardArticle.innerText = cards[i].article;
@@ -161,7 +166,7 @@ for (i = 0; i < close.length; i++){
 
 // Check if cards left to match
 totalMatches = () => {
-  if (matches == 8)
+  if (matches == pairs)
   {
     // Stop timer
     clearInterval(time);
@@ -302,15 +307,45 @@ const line1 = document.getElementsByClassName('line1')[0];
 const line2 = document.getElementsByClassName('line2')[0];
 const line3 = document.getElementsByClassName('line3')[0];
 const burger = document.getElementsByClassName('burger')[0];
+const options = document.getElementsByClassName('options')[0];
 
 const toggleMenu = () => {
   line1.classList.toggle('close');
   line2.classList.toggle('close');
   line3.classList.toggle('close');
-  console.log('opening or closing burger!');
+  options.classList.toggle('show-opts');
 }
 
 burger.addEventListener('click', toggleMenu);
+
+/* Card count option */
+/* Get variables */
+const minus = document.getElementsByClassName('minus')[0];
+const plus = document.getElementsByClassName('plus')[0];
+console.log('card count is ' + cardCount.value);
+
+const decrementCards = () => {
+  if(cardCount.value > 8){
+    cardCount.value -= 8;
+  }
+  if(cardCount.value == 8){
+    console.log('min value reached!');
+  }
+}
+
+const incrementCards = () => {
+  let num = parseInt(cardCount.value);
+  if(cardCount.value < 32){
+    num += 8;
+    cardCount.value = num;
+  }
+  if(cardCount.value == 32){
+    console.log('max value reached!');
+  }
+}
+
+minus.addEventListener('click', decrementCards);
+plus.addEventListener('click', incrementCards);
 
 /* Get cards on document load*/
 document.addEventListener('DOMContentLoaded', function(){
