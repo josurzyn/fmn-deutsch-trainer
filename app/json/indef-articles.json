@@ -1,0 +1,83 @@
+[
+  {
+    "article": "ein",
+    "case": "Maskulin Nominativ",
+    "id": "ein",
+    "cat": "indef-article"
+  }, {
+    "article": "einen",
+    "case": "Maskulin Akkusativ",
+    "id": "einen",
+    "cat": "indef-article"
+  }, {
+    "article": "einem",
+    "case": "Maskulin Dativ",
+    "id": "einem",
+    "cat": "indef-article"
+  }, {
+    "article": "eines",
+    "case": "Maskulin Genetiv",
+    "id": "eines",
+    "cat": "indef-article"
+  }, {
+    "article": "eine",
+    "case": "Feminin Nominativ",
+    "id": "eine",
+    "cat": "indef-article"
+  }, {
+    "article": "eine",
+    "case": "Feminin Akkusativ",
+    "id": "eine",
+    "cat": "indef-article"
+  }, {
+    "article": "einer",
+    "case": "Feminin Dativ",
+    "id": "einer",
+    "cat": "indef-article"
+  }, {
+    "article": "einer",
+    "case": "Feminin Genetiv",
+    "id": "einer",
+    "cat": "indef-article"
+  }, {
+    "article": "ein",
+    "case": "Neutral Nominativ",
+    "id": "ein",
+    "cat": "indef-article"
+  }, {
+    "article": "ein",
+    "case": "Neutral Akkusativ",
+    "id": "ein",
+    "cat": "indef-article"
+  }, {
+    "article": "einem",
+    "case": "Neutral Dativ",
+    "id": "einem",
+    "cat": "indef-article"
+  }, {
+    "article": "eines",
+    "case": "Neutral Genetiv",
+    "id": "eines",
+    "cat": "indef-article"
+  }, {
+    "article": "-",
+    "case": "Plural Nominativ",
+    "id": "-",
+    "cat": "indef-article"
+  }, {
+    "article": "-",
+    "case": "Plural Akkusativ",
+    "id": "-",
+    "cat": "indef-article"
+  }, {
+    "article": "-",
+    "case": "Plural Dativ",
+    "id": "-",
+    "cat": "indef-article"
+  }, {
+    "article": "-",
+    "case": "Plural Genetiv",
+    "id": "-",
+    "cat": "indef-article"
+  }
+]

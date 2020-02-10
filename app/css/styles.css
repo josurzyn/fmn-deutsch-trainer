@@ -74,7 +74,7 @@ ul, li {
   align-items: center;
   max-width: 80px;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #43464B;
   box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.4);
   flex-basis: 25%;
