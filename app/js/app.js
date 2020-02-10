@@ -17,8 +17,8 @@ const confirm = document.getElementById('confirm-opts');
 /* Use to fetch deck from json word bank */
 let cards = []
 
-fetchWordBank = () => {
-  fetch('/json/articles.json')
+fetchWordBank = (category) => {
+  fetch('/json/' + category + '.json')
   .then(response => {
     return response.json()
   })
@@ -354,13 +354,22 @@ const incrementCards = () => {
 minus.addEventListener('click', decrementCards);
 plus.addEventListener('click', incrementCards);
 
-confirm.addEventListener('click', function(){
-    fetchWordBank();
-    toggleMenu();
+const confirmOpts = () => {
+  toggleMenu();
+  for (let i = 0, length = categories.length; i < length; i++){
+    if (categories[i].checked){
+      category = categories[i].value;
+      console.log('category is ' + category);
+    }
   }
-);
+  fetchWordBank(category);
+}
+
+let categories = document.getElementsByName('category');
+let category = 'def-articles';
+confirm.addEventListener('click', confirmOpts);
 
 /* Get cards on document load*/
 document.addEventListener('DOMContentLoaded', function(){
-  fetchWordBank();
+  fetchWordBank(category);
 });
