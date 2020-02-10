@@ -11,6 +11,9 @@ let cardCount = document.getElementById('no-of-cards');
 let pairs = cardCount.value / 2;
 console.log('pairs is ' + pairs);
 
+// Options
+const confirm = document.getElementById('confirm-opts');
+
 /* Use to fetch deck from json word bank */
 let cards = []
 
@@ -324,20 +327,24 @@ const minus = document.getElementsByClassName('minus')[0];
 const plus = document.getElementsByClassName('plus')[0];
 console.log('card count is ' + cardCount.value);
 
+// Decrease card count with minus button
 const decrementCards = () => {
   if(cardCount.value > 8){
     cardCount.value -= 8;
+    pairs = cardCount.value / 2;
   }
   if(cardCount.value == 8){
     console.log('min value reached!');
   }
 }
 
+// Increase card count with plus button
 const incrementCards = () => {
   let num = parseInt(cardCount.value);
   if(cardCount.value < 32){
     num += 8;
     cardCount.value = num;
+    pairs = cardCount.value / 2;
   }
   if(cardCount.value == 32){
     console.log('max value reached!');
@@ -346,6 +353,12 @@ const incrementCards = () => {
 
 minus.addEventListener('click', decrementCards);
 plus.addEventListener('click', incrementCards);
+
+confirm.addEventListener('click', function(){
+    fetchWordBank();
+    toggleMenu();
+  }
+);
 
 /* Get cards on document load*/
 document.addEventListener('DOMContentLoaded', function(){
