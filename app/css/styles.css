@@ -80,10 +80,29 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  transform: translate(-500px, 0);
+  transform: translate(-100%, 0);
   transition: 0.5s ease-in-out;
 }
-
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 800;
+  color: inherit;
+}
+#confirm-opts {
+  border: 0.5px solid #43464B;
+  padding: 7px 15px;
+  margin: 10px;
+  background: #43464B;
+  color: #fff;
+  font-weight: 300;
+}
+#confirm-opts:hover {
+  background: #fff;
+  color: #43464b;
+}
 /* Choose number of cards */
 .card-count {
   z-index: 1;
@@ -101,6 +120,8 @@ input {
   text-align: center;
   font: inherit;
 }
+
+
 /* Styling for deck */
 #game {
   display: flex;
@@ -183,7 +204,7 @@ ul, li {
   justify-content: center;
 }
 /* Add card modal*/
-#admin {
+/*#admin {
   display: none;
 }
 .add-card-form {
@@ -209,7 +230,7 @@ button {
   font: inherit;
   font-weight: 800;
   color: inherit;
-}
+}*/
 
 /* Media Queries */
 @media screen and (max-width: 425px) {

@@ -181,8 +181,8 @@ totalMatches = () => {
 // Show modal with stats
 showModal = () => {
   modal.style.display = 'block';
-  modalTime.innerText = 'You won in '+ (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
-  modalMoves.innerText = 'with ' + moves + ' moves';
+  modalTime.innerText = 'Du hast in '+ (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
+  modalMoves.innerText = 'mit ' + moves + ' Zügen gewonnen';
 }
 
 // Variable to count moves
@@ -193,9 +193,9 @@ let displayMoves = document.getElementById('moves');
 move = () => {
   moves++;
   if (moves == 1) {
-    displayMoves.innerHTML = moves + ' Move';
+    displayMoves.innerHTML = moves + ' Zug';
   } else {
-    displayMoves.innerHTML = moves + ' Moves';
+    displayMoves.innerHTML = moves + ' Züge';
   }
 }
 
@@ -232,7 +232,7 @@ reset = () => {
   displayTimer.innerHTML = "00:00";
   // Reset moves
   moves = 0;
-  displayMoves.innerHTML = "0 Moves";
+  displayMoves.innerHTML = "0 Züge";
   // Reset matches
   matches = 0;
 }

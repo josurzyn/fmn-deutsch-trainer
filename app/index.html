@@ -19,7 +19,7 @@
         <h1 class="title">Die Artikel!</h1>
         <div class="stats">
           <p id="timer" class="timer control">00:00</p>
-          <p id="moves" class="moves control">0 Moves</p>
+          <p id="moves" class="moves control">0 Züge</p>
           <button id="reset" class="reset control">
             <i class="fas fa-redo-alt"></i>
           </button>
@@ -28,16 +28,16 @@
       </section>
       <div class="options">
         <div class="card-count">
-          <label for="no-of-cards">How many cards would you like?</label>
+          <label for="no-of-cards">Wie viele Karten möchtest du?</label>
           <button class="btn minus">-</button>
           <input type="number" name="no-of-cards" id="no-of-cards" value="8" min="8" max="32" readonly="readonly">
           <button class="btn plus">+</button>
-          <p>What category would you like?</p>
-          <label for="indefinite">Definite Articles<label>
+          <p>Was willst du üben?</p>
+          <label for="indefinite">Bestimmte Artikel<label>
           <input type="radio" name="category" id="definite" value="def-articles" checked>
-          <label for="indefinite">Indefinite Articles<label>
+          <label for="indefinite">Unbestimmte Artikel<label>
           <input type="radio" name="category" id="indefinite" value="indef-articles">
-          <button type="button" id="confirm-opts">Confirm</button>
+          <button type="button" id="confirm-opts">Los gehts!</button>
         </div>
       </div>
       <section id="game">
@@ -49,10 +49,10 @@
       </section>
       <div id="win" class="modal-background">
         <div class="modal-msg">
-          <h2>Congratulations!</h2>
+          <h2>Übung macht den Meister!</h2>
           <p id="modal-time"></p>
           <p id="modal-moves"></p>
-          <button class="close">Close</button>
+          <button class="close">Schließen</button>
         </div>
       </div>
         <!--<div id="admin" class="modal-background">
