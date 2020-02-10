@@ -331,7 +331,6 @@ console.log('card count is ' + cardCount.value);
 const decrementCards = () => {
   if(cardCount.value > 8){
     cardCount.value -= 8;
-    pairs = cardCount.value / 2;
   }
   if(cardCount.value == 8){
     console.log('min value reached!');
@@ -344,7 +343,6 @@ const incrementCards = () => {
   if(cardCount.value < 32){
     num += 8;
     cardCount.value = num;
-    pairs = cardCount.value / 2;
   }
   if(cardCount.value == 32){
     console.log('max value reached!');
@@ -355,6 +353,7 @@ minus.addEventListener('click', decrementCards);
 plus.addEventListener('click', incrementCards);
 
 const confirmOpts = () => {
+  pairs = cardCount.value / 2;
   toggleMenu();
   for (let i = 0, length = categories.length; i < length; i++){
     if (categories[i].checked){
