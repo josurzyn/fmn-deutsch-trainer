@@ -297,6 +297,21 @@ addCardForm.addEventListener('submit', function(e) {
   addNewCard()
 });*/
 
+/* Hamburger Navigation*/
+const line1 = document.getElementsByClassName('line1')[0];
+const line2 = document.getElementsByClassName('line2')[0];
+const line3 = document.getElementsByClassName('line3')[0];
+const burger = document.getElementsByClassName('burger')[0];
+
+const toggleMenu = () => {
+  line1.classList.toggle('close');
+  line2.classList.toggle('close');
+  line3.classList.toggle('close');
+  console.log('opening or closing burger!');
+}
+
+burger.addEventListener('click', toggleMenu);
+
 /* Get cards on document load*/
 document.addEventListener('DOMContentLoaded', function(){
   fetchWordBank();
