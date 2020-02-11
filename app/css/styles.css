@@ -1,8 +1,10 @@
 html {
   height: 100%;
+  width: 100%;
 }
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: #43464B;
@@ -94,23 +96,29 @@ button {
 #confirm-opts {
   border: 0.5px solid #43464B;
   padding: 7px 15px;
-  margin: 10px;
+  margin: 30px 10px 0 0;
   background: #43464B;
   color: #fff;
   font-weight: 300;
+  width: 150px;
 }
 #confirm-opts:hover {
   background: #fff;
   color: #43464b;
 }
 /* Choose number of cards */
+.card-selector {
+  margin: 15px;
+}
 .card-count {
   z-index: 1;
   position: fixed;
   top: 40%;
+  width: 100%;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .options.show-opts {
   transform: translate(0,0);
@@ -129,8 +137,12 @@ input {
 .opt-label {
   font-size: 16px;
   margin-left: 0;
+  flex-basis: 45%;
 }
 /* Radio checkbox styling - with help from Tipue https://tipue.com/blog/radio-checkbox/ */
+.radio-group {
+  flex-basis: 100%;
+}
 .radio-input
 {
      -webkit-appearance: none;
