@@ -329,22 +329,30 @@ console.log('card count is ' + cardCount.value);
 
 // Decrease card count with minus button
 const decrementCards = () => {
+  if(plus.classList.contains('inactive')){
+    plus.classList.remove('inactive');
+  }
   if(cardCount.value > 8){
     cardCount.value -= 8;
   }
   if(cardCount.value == 8){
     console.log('min value reached!');
+    minus.classList.add('inactive');
   }
 }
 
 // Increase card count with plus button
 const incrementCards = () => {
+  if(minus.classList.contains('inactive')){
+    minus.classList.remove('inactive');
+  }
   let num = parseInt(cardCount.value);
   if(cardCount.value < 32){
     num += 8;
     cardCount.value = num;
   }
   if(cardCount.value == 32){
+    plus.classList.add('inactive');
     console.log('max value reached!');
   }
 }

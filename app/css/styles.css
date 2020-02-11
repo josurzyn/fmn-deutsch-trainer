@@ -120,7 +120,10 @@ input {
   text-align: center;
   font: inherit;
 }
-
+.inactive {
+  color: #adadad;
+  cursor: default;
+}
 
 /* Styling for deck */
 #game {
