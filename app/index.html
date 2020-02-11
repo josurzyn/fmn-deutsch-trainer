@@ -12,9 +12,9 @@
     <div class="flex-wrapper">
       <section id="controls">
         <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+          <div class="line1 close"></div>
+          <div class="line2 close"></div>
+          <div class="line3 close"></div>
         </div>
         <h1 class="title">Die Artikel!</h1>
         <div class="stats">
@@ -26,17 +26,23 @@
         </div>
         <!--<button id="addBtn" class="add control">Add Cards</button>-->
       </section>
-      <div class="options">
+      <div class="options show-opts">
         <div class="card-count">
-          <label for="no-of-cards">Wie viele Karten möchtest du?</label>
-          <button class="btn minus">-</button>
-          <input type="number" name="no-of-cards" id="no-of-cards" value="8" min="8" max="32" readonly="readonly">
-          <button class="btn plus">+</button>
-          <p>Was willst du üben?</p>
-          <label for="indefinite">Bestimmte Artikel<label>
-          <input type="radio" name="category" id="definite" value="def-articles" checked>
-          <label for="indefinite">Unbestimmte Artikel<label>
-          <input type="radio" name="category" id="indefinite" value="indef-articles">
+          <label for="no-of-cards" class="opt-label">Wie viele Karten möchtest du?</label>
+          <div class="card-selector">
+            <button class="btn minus">-</button>
+            <input type="number" name="no-of-cards" id="no-of-cards" value="8" min="8" max="32" readonly="readonly">
+            <button class="btn plus">+</button>
+          </div>
+          <p class="opt-label">Was willst du üben?</p>
+          <div>
+            <input type="radio" name="category" id="definite" value="def-articles" class="radio-input" checked>
+            <label for="definite" class="radio-label">Bestimmte Artikel</label>
+          </div>
+          <div>
+            <input type="radio" name="category" id="indefinite" value="indef-articles" class="radio-input">
+            <label for="indefinite" class="radio-label">Unbestimmte Artikel</label>
+          </div>
           <button type="button" id="confirm-opts">Los gehts!</button>
         </div>
       </div>

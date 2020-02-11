@@ -109,6 +109,8 @@ button {
   position: fixed;
   top: 40%;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .options.show-opts {
   transform: translate(0,0);
@@ -123,6 +125,50 @@ input {
 .inactive {
   color: #adadad;
   cursor: default;
+}
+.opt-label {
+  font-size: 16px;
+  margin-left: 0;
+}
+/* Radio checkbox styling - with help from Tipue https://tipue.com/blog/radio-checkbox/ */
+.radio-input
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;
+     margin-right: 7px;
+     outline: none;
+}
+.radio-input:checked::before
+{
+     position: absolute;
+     font: inherit;
+     left: 11px;
+     top: 4px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.radio-input:hover
+{
+     background-color: #f7f7f7;
+}
+.radio-input:checked
+{
+     background-color: #f1f1f1;
+}
+label.radio-label {
+     cursor: pointer;
+     font-size: 0.9em;
 }
 
 /* Styling for deck */
