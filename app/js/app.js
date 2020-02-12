@@ -9,6 +9,8 @@ let displayTimer = document.getElementById('timer');
 // Card count
 let cardCount = document.getElementById('no-of-cards');
 let pairs = cardCount.value / 2;
+const maxCards = 24;
+const minCards = 8;
 console.log('pairs is ' + pairs);
 
 // Options
@@ -332,10 +334,10 @@ const decrementCards = () => {
   if(plus.classList.contains('inactive')){
     plus.classList.remove('inactive');
   }
-  if(cardCount.value > 8){
+  if(cardCount.value > minCards){
     cardCount.value -= 8;
   }
-  if(cardCount.value == 8){
+  if(cardCount.value == minCards){
     console.log('min value reached!');
     minus.classList.add('inactive');
   }
@@ -347,11 +349,11 @@ const incrementCards = () => {
     minus.classList.remove('inactive');
   }
   let num = parseInt(cardCount.value);
-  if(cardCount.value < 32){
+  if(cardCount.value < maxCards){
     num += 8;
     cardCount.value = num;
   }
-  if(cardCount.value == 32){
+  if(cardCount.value == maxCards){
     plus.classList.add('inactive');
     console.log('max value reached!');
   }

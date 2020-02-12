@@ -19,9 +19,14 @@ body {
   justify-content: center;
 }
 p {
-  margin: 3px;
+  margin: 0 30px 20px;
   font-weight: 300;
   font-size: 0.9em;
+  text-align: justify;
+}
+p.opt-label {
+  margin: 5px;
+  font-weight: 500;
 }
 #controls {
   flex-basis: 100%;
@@ -30,10 +35,11 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
-.title {
+.category-title {
   flex-basis: 100%;
-  margin: 10px;
+  margin: 0 10px 0 0;
   text-align: right;
+  font-weight: 300;
 }
 .stats {
   flex-basis: 100%;
@@ -47,11 +53,19 @@ p {
   flex-basis: 20%;
   text-align: center;
 }
+.title {
+  /*display: inline-block;*/
+  flex-basis: 100%;
+  z-index: 1;
+  margin: 15px 15px 0 0;
+  font-weight: 500;
+  text-align: right;
+}
 /* hamburger navigation*/
 .burger {
   display: inline-block;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   margin: 10px 5px 5px 20px;
 }
@@ -114,10 +128,10 @@ button {
   position: fixed;
   top: 15%;
   width: 100%;
-  margin-left: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 .options.show-opts {
   transform: translate(0,0);
@@ -142,8 +156,7 @@ input {
 .radio-group {
   flex-basis: 100%;
 }
-.radio-input
-{
+.radio-input {
      -webkit-appearance: none;
      -moz-appearance: none;
      appearance: none;
@@ -160,8 +173,7 @@ input {
      margin-right: 7px;
      outline: none;
 }
-.radio-input:checked::before
-{
+.radio-input:checked::before {
      position: absolute;
      font: inherit;
      left: 11px;
@@ -169,17 +181,16 @@ input {
      content: '\02143';
      transform: rotate(40deg);
 }
-.radio-input:hover
-{
+.radio-input:hover {
      background-color: #f7f7f7;
 }
-.radio-input:checked
-{
+.radio-input:checked {
      background-color: #f1f1f1;
 }
 label.radio-label {
      cursor: pointer;
      font-size: 0.9em;
+     font-weight: 300;
 }
 
 /* Styling for deck */

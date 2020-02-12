@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4ca6c66fc8.js" crossorigin="anonymous"></script>
-    <title>deutsch</title>
+    <title>{f}{m}{n} - Deutsch Trainer</title>
   </head>
   <body>
     <div class="flex-wrapper">
@@ -16,7 +16,8 @@
           <div class="line2 close"></div>
           <div class="line3 close"></div>
         </div>
-        <h1 class="title">Die Artikel!</h1>
+        <h1 class="title">{f}{m}{n}</h1>
+        <h2 class="category-title">Bestimmte Artikel</h2>
         <div class="stats">
           <p id="timer" class="timer control">00:00</p>
           <p id="moves" class="moves control">0 Züge</p>
@@ -28,20 +29,23 @@
       </section>
       <div class="options show-opts">
         <div class="card-count">
+          <p class="info">Learning German genders and cases is hard. Get up to speed with the <b>{f}{m}{n}</b> memory card game. Bist du bereit?</p>
           <label for="no-of-cards" class="opt-label">Wie viele Karten möchtest du?</label>
           <div class="card-selector">
             <button class="btn minus">-</button>
-            <input type="number" name="no-of-cards" id="no-of-cards" value="8" min="8" max="32" readonly="readonly">
+            <input type="number" name="no-of-cards" id="no-of-cards" value="16" min="8" max="24" readonly="readonly">
             <button class="btn plus">+</button>
           </div>
           <p class="opt-label">Was willst du üben?</p>
-          <div class="radio-group">
-            <input type="radio" name="category" id="definite" value="def-articles" class="radio-input" checked>
-            <label for="definite" class="radio-label">Bestimmte Artikel</label>
-          </div>
-          <div class="radio-group">
-            <input type="radio" name="category" id="indefinite" value="indef-articles" class="radio-input">
-            <label for="indefinite" class="radio-label">Unbestimmte Artikel</label>
+          <div>
+            <div class="radio-group">
+              <input type="radio" name="category" id="definite" value="def-articles" class="radio-input" checked>
+              <label for="definite" class="radio-label">Bestimmte Artikel</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="category" id="indefinite" value="indef-articles" class="radio-input">
+              <label for="indefinite" class="radio-label">Unbestimmte Artikel</label>
+            </div>
           </div>
           <button type="button" id="confirm-opts">Los gehts!</button>
         </div>
