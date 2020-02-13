@@ -15,6 +15,7 @@ console.log('pairs is ' + pairs);
 
 // Options
 const confirm = document.getElementById('confirm-opts');
+let categoryTitle = document.getElementsByClassName('category-title')[0];
 
 /* Use to fetch deck from json word bank */
 let cards = []
@@ -362,13 +363,16 @@ const incrementCards = () => {
 minus.addEventListener('click', decrementCards);
 plus.addEventListener('click', incrementCards);
 
+let title = '';
+
 const confirmOpts = () => {
   pairs = cardCount.value / 2;
   toggleMenu();
   for (let i = 0, length = categories.length; i < length; i++){
     if (categories[i].checked){
       category = categories[i].value;
-      console.log('category is ' + category);
+      title = categories[i].nextElementSibling.innerText;
+      categoryTitle.innerText = title;
     }
   }
   fetchWordBank(category);
