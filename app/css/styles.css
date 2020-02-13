@@ -92,10 +92,10 @@ p.opt-label {
 .options {
   background: #fff;
   position: fixed;
-  left: 0;
+  left: auto;
   height: 100%;
   width: 100%;
-  transform: translate(-100%, 0);
+  transform: translate(0, 100%);
   transition: 0.5s ease-in-out;
 }
 button {
@@ -304,14 +304,14 @@ button {
 }*/
 
 /* Media Queries */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 407px) {
   .card {
     max-width: 60px;
     height: 60px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 332px) {
   .card {
     font-size: 0.7em;
     max-width: 45px;
@@ -325,6 +325,9 @@ button {
     flex-basis: auto;
   }
   #deckSpace {
+    width: 460px;
+  }
+  .options {
     width: 460px;
   }
 }
