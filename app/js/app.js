@@ -185,7 +185,7 @@ totalMatches = () => {
 showModal = () => {
   modal.style.display = 'block';
   modalTime.innerText = 'Du hast in '+ (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds);
-  modalMoves.innerText = 'mit ' + moves + ' Zügen gewonnen';
+  modalMoves.innerText = 'mit ' + moves + ' Zügen gewonnen.';
 }
 
 // Variable to count moves

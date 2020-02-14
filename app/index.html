@@ -32,9 +32,9 @@
           <p class="info">Learning German genders and cases is hard. Get up to speed with the <b>{f}{m}{n}</b> memory card game. Bist du bereit?</p>
           <label for="no-of-cards" class="opt-label">Wie viele Karten möchtest du?</label>
           <div class="card-selector">
-            <button class="btn minus">-</button>
+            <button class="minus">-</button>
             <input type="number" name="no-of-cards" id="no-of-cards" value="16" min="8" max="24" readonly="readonly">
-            <button class="btn plus">+</button>
+            <button class="plus">+</button>
           </div>
           <p class="opt-label">Was willst du üben?</p>
           <div>
@@ -47,7 +47,7 @@
               <label for="indefinite" class="radio-label">Unbestimmte Artikel</label>
             </div>
           </div>
-          <button type="button" id="confirm-opts">Los gehts!</button>
+          <button type="button" id="confirm-opts" class="btn">Los gehts!</button>
         </div>
       </div>
       <section id="game">
@@ -60,9 +60,9 @@
       <div id="win" class="modal-background">
         <div class="modal-msg">
           <h2>Übung macht den Meister!</h2>
-          <p id="modal-time"></p>
-          <p id="modal-moves"></p>
-          <button class="close">Schließen</button>
+          <p id="modal-time" class="modal-p"></p>
+          <p id="modal-moves" class="modal-p"></p>
+          <button class="close btn">Schließen</button>
         </div>
       </div>
         <!--<div id="admin" class="modal-background">

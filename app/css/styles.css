@@ -106,7 +106,7 @@ button {
   font-weight: 800;
   color: inherit;
 }
-#confirm-opts {
+.btn {
   border: 0.5px solid #43464B;
   padding: 7px 15px;
   margin: 30px 10px 0 0;
@@ -115,7 +115,7 @@ button {
   font-weight: 300;
   width: 150px;
 }
-#confirm-opts:hover {
+.btn:hover {
   background: #fff;
   color: #43464b;
 }
@@ -259,21 +259,25 @@ ul, li {
   flex-flow: column nowrap;
   min-height: 100px;
   text-align: center;
+  align-items: center;
   margin: 10% 10% auto;
   border: 1px solid #43464B;
   background: #fff;
   padding: 20px;
   box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.4);
 }
+p.modal-p {
+  margin: 5px;
+}
 /*.close {
   cursor: pointer;
   margin: 20px 10px 8px;
-}*/
+}
 #new-card {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
+}*/
 /* Add card modal*/
 /*#admin {
   display: none;
