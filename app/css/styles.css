@@ -339,6 +339,9 @@ button {
     flex-basis: auto;
   }
   #deckSpace {
+    width: 360px;
+  }
+  #deckSpace.large {
     width: 490px;
   }
   .options {
@@ -351,6 +354,9 @@ button {
     flex-basis: auto;
   }
   #deckSpace {
+    width: 500px;
+  }
+  #deckSpace.large {
     width: 650px;
   }
   .options {

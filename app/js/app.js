@@ -12,6 +12,7 @@ let pairs = cardCount.value / 2;
 const maxCards = 24;
 const minCards = 8;
 console.log('pairs is ' + pairs);
+const gameSpace = document.getElementById('deckSpace');
 
 // Options
 const confirm = document.getElementById('confirm-opts');
@@ -367,6 +368,14 @@ let title = '';
 
 const confirmOpts = () => {
   pairs = cardCount.value / 2;
+  console.log('card count is ' + cardCount.value);
+  if (cardCount.value > 16){
+    gameSpace.classList.add('large');
+    console.log('adding large class');
+  } else if (gameSpace.classList.contains('large')){
+    gameSpace.classList.remove('large');
+    console.log('removing large class');
+  }
   toggleMenu();
   for (let i = 0, length = categories.length; i < length; i++){
     if (categories[i].checked){
