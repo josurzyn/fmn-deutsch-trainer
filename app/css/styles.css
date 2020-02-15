@@ -28,6 +28,9 @@ p.opt-label {
   margin: 5px;
   font-weight: 500;
 }
+p.control {
+  margin: 0px;
+}
 #controls {
   flex-basis: 100%;
   display: flex;
@@ -308,13 +311,17 @@ button {
 }*/
 
 /* Media Queries */
-@media screen and (max-width: 407px) {
+@media screen and (max-width: 700px) {
   .card {
     max-width: 60px;
     height: 60px;
   }
 }
-
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  #deckSpace {
+    width: 360px;
+  }
+}
 @media screen and (max-width: 332px) {
   .card {
     font-size: 0.7em;
@@ -322,23 +329,34 @@ button {
     height: 45px;
   }
 }
-
 @media screen and (min-width: 500px) {
   #controls {
-    width: 460px;
+    width: 490px;
     flex-basis: auto;
   }
   #deckSpace {
-    width: 460px;
+    width: 490px;
   }
   .options {
-    width: 460px;
+    width: 490px;
+  }
+}
+@media screen and (min-width: 700px) {
+  #controls {
+    width: 650px;
+    flex-basis: auto;
+  }
+  #deckSpace {
+    width: 650px;
+  }
+  .options {
+    width: 650px;
   }
 }
 
 @media screen and (min-height: 630px) {
   #deckSpace {
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
   }
 }
 
