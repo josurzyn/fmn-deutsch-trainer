@@ -59,25 +59,5 @@
     "case": "Neutral Genetiv",
     "id": "eines",
     "cat": "indef-article"
-  }, {
-    "article": "-",
-    "case": "Plural Nominativ",
-    "id": "-",
-    "cat": "indef-article"
-  }, {
-    "article": "-",
-    "case": "Plural Akkusativ",
-    "id": "-",
-    "cat": "indef-article"
-  }, {
-    "article": "-",
-    "case": "Plural Dativ",
-    "id": "-",
-    "cat": "indef-article"
-  }, {
-    "article": "-",
-    "case": "Plural Genetiv",
-    "id": "-",
-    "cat": "indef-article"
   }
 ]
