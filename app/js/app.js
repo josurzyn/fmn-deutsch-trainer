@@ -33,7 +33,6 @@ fetchWordBank = (category) => {
   })
 }
 
-
 createDeck = (cards) => {
   shuffleArray(cards);
   // Use fragment to avoid unnecessary reflowing
@@ -166,6 +165,7 @@ closeModal = () => {
 // Add close event to multiple close buttons
 for (i = 0; i < close.length; i++){
   close[i].addEventListener('click', closeModal);
+  console.log('using close loop thing');
 }
 
 // Check if cards left to match
@@ -238,19 +238,9 @@ reset = () => {
   matches = 0;
 }
 
-// Show admin modal
-let adminModal = document.getElementById('admin');
-
-const showAdmin = () => {
-  adminModal.style.display = 'block';
-}
-
 // Control Buttons Functionality
 const resetBtn = document.getElementById('reset');
 resetBtn.addEventListener('click', reset);
-
-
-
 
 /* LOCAL STORAGE */
 const store = () => {
