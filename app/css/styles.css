@@ -318,6 +318,10 @@ button {
   }
 }
 @media screen and (min-width: 400px) and (max-width: 500px) {
+  #controls {
+    width: 360px;
+    flex-basis: auto;
+  }
   #deckSpace {
     width: 360px;
   }
@@ -354,9 +358,9 @@ button {
   }
 }
 
-@media screen and (min-height: 630px) {
+/*@media screen and (min-height: 630px) {
   #deckSpace {
-    /*margin-bottom: 80px;*/
+    margin-bottom: 80px;
   }
 }
 
@@ -364,10 +368,10 @@ button {
   #controls {
     padding: 0 25%;
   }
-}
+}*/
 
-@media screen and (min-width: 1830px) {
+@media screen and (min-width: 1300px) {
   #controls {
-    padding: 0 35%;
+    padding: 0 25%;
   }
 }
