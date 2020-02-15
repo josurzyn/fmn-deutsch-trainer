@@ -252,8 +252,6 @@ const showAdmin = () => {
 const resetBtn = document.getElementById('reset');
 resetBtn.addEventListener('click', reset);
 
-/*const addBtn = document.getElementById('addBtn');
-addBtn.addEventListener('click', showAdmin);*/
 
 
 
@@ -278,36 +276,6 @@ const getCards = () => {
     fetchWordBank();
   }
 }
-
-/* Get new card data and add to cards array
-addNewCard = () => {
-  let en = document.getElementById('en').value;
-  let nl = document.getElementById('nl').value;
-  let id = document.getElementById('id').value;
-  let cat = document.getElementById('cat').value;
-  let card = {
-    en: en,
-    nl: nl,
-    id: id,
-    cat: cat
-  };
-  cards.push(card);
-  store();
-  clearForm();
-}
-
-clearForm = () => {
-  let inputs = document.getElementsByClassName('input');
-  for (i = 0; i < inputs.length; i++) {
-    inputs[i].value = "";
-  }
-}
-
-const addCardForm = document.getElementById('new-card');
-addCardForm.addEventListener('submit', function(e) {
-  e.preventDefault()
-  addNewCard()
-});*/
 
 /* Hamburger Navigation*/
 const line1 = document.getElementsByClassName('line1')[0];
