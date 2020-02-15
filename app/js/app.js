@@ -1,5 +1,3 @@
-console.log('hello, world');
-
 // Timer variables
 let time = 0;
 let seconds = 0;
@@ -11,7 +9,6 @@ let cardCount = document.getElementById('no-of-cards');
 let pairs = cardCount.value / 2;
 const maxCards = 24;
 const minCards = 8;
-console.log('pairs is ' + pairs);
 const gameSpace = document.getElementById('deckSpace');
 
 // Options
@@ -297,7 +294,6 @@ burger.addEventListener('click', toggleMenu);
 /* Get variables */
 const minus = document.getElementsByClassName('minus')[0];
 const plus = document.getElementsByClassName('plus')[0];
-console.log('card count is ' + cardCount.value);
 
 // Decrease card count with minus button
 const decrementCards = () => {
@@ -308,7 +304,6 @@ const decrementCards = () => {
     cardCount.value -= 8;
   }
   if(cardCount.value == minCards){
-    console.log('min value reached!');
     minus.classList.add('inactive');
   }
 }
@@ -325,7 +320,6 @@ const incrementCards = () => {
   }
   if(cardCount.value == maxCards){
     plus.classList.add('inactive');
-    console.log('max value reached!');
   }
 }
 
@@ -336,13 +330,10 @@ let title = '';
 
 const confirmOpts = () => {
   pairs = cardCount.value / 2;
-  console.log('card count is ' + cardCount.value);
   if (cardCount.value > 16){
     gameSpace.classList.add('large');
-    console.log('adding large class');
   } else if (gameSpace.classList.contains('large')){
     gameSpace.classList.remove('large');
-    console.log('removing large class');
   }
   toggleMenu();
   for (let i = 0, length = categories.length; i < length; i++){
