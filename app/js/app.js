@@ -25,7 +25,7 @@ fetchWordBank = (category) => {
   })
   .then(json => {
     cards = json;
-    store();
+    //store();
     createDeck(cards);
   })
   .catch(err => {
@@ -63,7 +63,7 @@ createDeck = (cards) => {
   addFlipEvent();
 }
 
-// Shuffle in DOM to mix up en/nl
+// Shuffle in DOM to mix up cards
 // with help from https://stackoverflow.com/questions/7070054/javascript-shuffle-html-list-element-order
 shuffle = () => {
   let deck = document.getElementById('deck');
@@ -158,14 +158,12 @@ let modalTime = document.getElementById('modal-time');
 // Close modal
 closeModal = () => {
   modal.style.display = 'none';
-  //adminModal.style.display = 'none';
   reset();
 }
 
 // Add close event to multiple close buttons
 for (i = 0; i < close.length; i++){
   close[i].addEventListener('click', closeModal);
-  console.log('using close loop thing');
 }
 
 // Check if cards left to match
@@ -242,7 +240,7 @@ reset = () => {
 const resetBtn = document.getElementById('reset');
 resetBtn.addEventListener('click', reset);
 
-/* LOCAL STORAGE */
+/* LOCAL STORAGE
 const store = () => {
   // Check storage supported
   if (typeof(Storage) !== "undefined") {
@@ -262,7 +260,7 @@ const getCards = () => {
   } else {
     fetchWordBank();
   }
-}
+}*/
 
 /* Hamburger Navigation*/
 const line1 = document.getElementsByClassName('line1')[0];
