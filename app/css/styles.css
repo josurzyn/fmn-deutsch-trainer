@@ -37,6 +37,7 @@ p {
   margin: 0 10px 0 0;
   text-align: right;
   font-weight: 300;
+  font-size: 0.9em;
 }
 .stats {
   flex-basis: 100%;
@@ -283,9 +284,6 @@ p.modal-p {
   #deckSpace {
     width: 360px;
   }
-  h2.category-title {
-    font-size: 0.9em;
-  }
 }
 @media screen and (max-width: 332px) {
   .card {
@@ -307,6 +305,9 @@ p.modal-p {
   }
   .options {
     width: 490px;
+  }
+  .category-title {
+    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 700px) {
