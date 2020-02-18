@@ -19,7 +19,7 @@ let categoryTitle = document.getElementsByClassName('category-title')[0];
 let cards = []
 
 fetchWordBank = (category) => {
-  fetch('/json/' + category + '.json')
+  fetch('https://raw.githubusercontent.com/josurzyn/fmn-deutsch-trainer/gh-pages/json/' + category + '.json')
   .then(response => {
     return response.json()
   })
