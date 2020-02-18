@@ -283,7 +283,7 @@ p.modal-p {
   #deckSpace {
     width: 360px;
   }
-  h2 {
+  h2.category-title {
     font-size: 0.9em;
   }
 }
