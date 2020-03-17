@@ -270,6 +270,9 @@ const burger = document.getElementsByClassName('burger')[0];
 const options = document.getElementsByClassName('options')[0];
 
 const toggleMenu = () => {
+  if(!options.classList.contains('show-opts')){
+    reset();
+  }
   line1.classList.toggle('close');
   line2.classList.toggle('close');
   line3.classList.toggle('close');
