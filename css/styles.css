@@ -230,6 +230,7 @@ ul, li {
   flex-basis: 25%;
   margin: 5px;
   cursor: pointer;
+  user-select: none;
 }
 .card.open {
   transform: rotateY(0);
